@@ -1,6 +1,6 @@
 html, body{
-    color:chocolate;
-    background-color: aquamarine;
+    color:azure;
+    background-color: burlywood;
     width:50% ;
     margin: 0 auto;
 }
@@ -10,7 +10,7 @@ html, body{
 #inputField{
     width:300px;
     height: 46px;
-    border:1px solid black;
+    border:2px groove powderblue;
     outline: none;
     font-size: 25px;
     vertical-align: middle;
@@ -18,12 +18,12 @@ html, body{
 #addToDo{
     height:50px ;
     width: 50px;
-    border: 1px solid black;
+    border: 2px groove powderblue;
     vertical-align: middle;
     font-size: 30px;
 }
 .to-dos{
-    margin-top: 25px;
+    margin-top: 20px;
 }
 .paragraph-styling{
   margin: 0;
