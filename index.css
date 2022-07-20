@@ -10,6 +10,7 @@
    line-height: 70px; 
    padding: 16px 8px;
    font-size: 25px;
+   color: sandybrown;
 }
 
 .buttons {
@@ -35,12 +36,8 @@
    color: white;
    font-size: 40px;
 }
-.button:hover {
-    color:black ;
-    background-color:lightyellow;
-    transition: .4s ease-in-out;
-}
-#C {
+
+#equal1 {
     color: white;
     background-color: lightsalmon;
     font-size: 40px;
@@ -49,4 +46,36 @@
     background-color: lightgreen;
     color: ivory;
     font-size: 40px;
+}
+#v {
+    padding: 3px;
+    color: white;
+    background-color: black;
+    border: 3px solid darkblue;
+    box-shadow:0px 0px 5px 5px orange;
+    
+}
+#normal {
+    padding: 2px;
+    color: white;
+    background-color: lightgreen;
+ border:  3px solid lightsalmon;
+ box-shadow: 0px 0px 5px 5px lightblue;
+}
+#center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: fit-content;
+    margin: auto;
+    border: 1px solid lightgrey;
+    padding: 1%;
+    box-shadow: 0px 0px 5px 5px lightgrey;
+}
+#col {
+    padding: 3px;
+    background-color: aqua;
+    border: 2px solid green;
+    box-shadow:0px 0px 5px 5px darkcyan;
+    color:green;
+    font-size: bold;
 }
