@@ -28,8 +28,6 @@ switch(e.target.innerText){
 });
 });
 function cat() {
-    let red;
-    if(confirm('do you want to change the font to dark theme') == true) {
         document.getElementById('equal').style.backgroundColor = 'darkblue';
         document.getElementById('equal1').style.backgroundColor = 'darkorange'; 
         document.getElementById('arrow').style.backgroundColor = 'purple'; 
@@ -39,15 +37,13 @@ function cat() {
      a.style.color = 'black'; a.style.backgroundColor = 'darkgrey';
      document.querySelector('.buttons').style.backgroundColor = 'black';
      document.querySelector('.buttons').style.color = 'white';
-    }else {
-        event.preventDefault
-    } }
+   }
     function fub() {
  window.location.reload()
 }
 
 function customAlert() {
-        this.render = function (dialog) {
+        this.render = function () {
             var winW = window.innerWidth;
             var winH = window.innerHeight;
             var dialogoverlay = document.getElementById('dialogoverlay');
@@ -57,9 +53,6 @@ function customAlert() {
             dialogbox.style.left = (winW/2) - (550 * .5)+"px";
             dialogbox.style.top = "100px";
             dialogbox.style.display = "block"
-            document.getElementById('dialogboxhead').innerHTML = '<h1 align="center">hello there</h1>'
-            document.getElementById('dialogboxbody').innerHTML = dialog;
-            document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">click me</button>';
         }
         this.ok = function () {
             document.getElementById('dialogoverlay').style.display = 'none'   

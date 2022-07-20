@@ -6,16 +6,34 @@
     left: 0px;
     width: 100%;
     z-index: 10;
+    background:whitesmoke;
 }
 #dialogbox{
     display: none;
     position: fixed;
-    background:#000;
+    background: darkblue;
     border-radius: 7px;
-    width:550px;
-    z-index: 10;
+    width:500px;
+    margin: auto;
+    z-index: 900;
+    box-shadow: 0px 0px 10px 10px orange;
 }
-#dialogbox > div{ background:#FFF; margin: 8px;}
-#dialogbox > div #dialogboxhead{background: #666; font-size: 19px; padding: 10px; color: #ccc;}
-#dialogbox > div #dialogboxbody{background: #333; padding: 20px; color: #FFF;}
-#dialogbox > div #dialogboxfoot{background: #666; padding: 10px; text-align: right;}
+#dialogbox > div{ background:black; margin: 5px;}
+#dialogbox > div #dialogboxhead{background: black; font-size: 19px; padding: 10px; color:ivory;}
+#dialogbox > div #dialogboxfoot{background: black; font-size: 19px; padding: 10px; color: ivory; text-align:right;}
+#btnstyle {
+    color: lightgrey;
+    background: purple;
+    width:50px;
+    height: 25px;
+    margin: 0 auto;
+    font-size:large;
+}
+#btnstyle1 {
+    color: lightgrey;
+    background:purple;
+    width:50px;
+    height: 25px;
+    margin: 0 auto;
+    font-size:large;
+}

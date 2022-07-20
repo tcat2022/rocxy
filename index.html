@@ -4,10 +4,11 @@
         <title>calculater</title>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="cat.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="center">
-       <button onclick="cat()" id="v">dark theme</button>
+       <button  id="v" onclick="Alert.render()">dark mode</button>
        <p></p>
         <button onclick="fub()" id="normal">normal</button>
         <p></p>
@@ -43,17 +44,11 @@
          <div id="dialogoverlay">
             <div id="dialogbox">
                 <div>
-                    <div id="dialogboxhead"></div>
-                    <div id="dialogboxbody"></div>
-                    <div id="dialogboxfoot"></div>
+                    <div id="dialogboxhead"><h1 align="center">Would you like to switch to Dark Mode</h1></div>
+                    <div id="dialogboxfoot"><button onclick="Alert.ok()" id="btnstyle">NO</button> &emsp;  <button onclick="cat(); Alert.ok()" id="btnstyle1">YES</button></div>
                 </div>
             </div>
          </div>
-<button onclick="Alert.render('hello there')">h</button>
-
-
-
-
          <script src="script.js"></script>
     </body>
 </html>
