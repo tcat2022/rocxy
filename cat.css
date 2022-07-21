@@ -6,7 +6,6 @@
     left: 0px;
     width: 100%;
     z-index: 10;
-    background:whitesmoke;
 }
 #dialogbox{
     display: none;
@@ -36,4 +35,44 @@
     height: 25px;
     margin: 0 auto;
     font-size:large;
+}
+#dialogoverlay1 {
+    display: none;
+    opacity:none;
+    position:fixed ;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+}
+#dialogbox1{
+    display: none;
+    position: fixed;
+    background: salmon;
+    border-radius: 7px;
+    width:500px;
+    margin: auto;
+    z-index: 900;
+    box-shadow: 0px 0px 10px 10px lightblue;
+}
+#dialogbox1 > div{ margin: 5px;}
+#dialogbox1 > div #dialogboxhead1{background:lightgreen; font-size: 19px; padding: 10px; color:white;}
+#dialogbox1 > div #dialogboxfoot1{background:lightgreen; 
+    font-size: 19px; padding: 10px; color:white; text-align:right;}
+#btnstyle2 {
+    color:white;
+    background-color: lightgreen;
+    border: 3px solid salmon;
+    width:50px;
+    height: 25px;
+    margin: 0 auto;
+    font-size:large;
+    box-shadow: 0px 0px 5px 5px lightblue;
+}
+#img {
+    background: lightgreen;
+    background-image: url("cat.png");
+    background-size: 20% 120%;
+     background-repeat: no-repeat;
+     color: lightgreen;
 }

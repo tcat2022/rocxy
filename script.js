@@ -38,7 +38,7 @@ function cat() {
      document.querySelector('.buttons').style.backgroundColor = 'black';
      document.querySelector('.buttons').style.color = 'white';
    }
-    function fub() {
+    function cub() {
  window.location.reload()
 }
 
@@ -50,8 +50,8 @@ function customAlert() {
             var dialogbox = document.getElementById('dialogbox');
             dialogoverlay.style.display = "block";
             dialogoverlay.style.height = winH + "px";
-            dialogbox.style.left = (winW/2) - (550 * .5)+"px";
-            dialogbox.style.top = "100px";
+            dialogbox.style.left = (winW/2) - (1100 * .8)+"px";
+            dialogbox.style.top = "90px";
             dialogbox.style.display = "block"
         }
         this.ok = function () {
@@ -60,3 +60,21 @@ function customAlert() {
         };
     }
 var Alert = new customAlert();
+    function custoMalert() {
+        this.render1 = function () {
+            var winW1 = window.innerWidth;
+            var winH1 = window.innerHeight;
+            var dialogoverlay1 = document.getElementById('dialogoverlay1');
+            var dialogbox1 = document.getElementById('dialogbox1');
+            dialogoverlay1.style.display = "block";
+            dialogoverlay1.style.height = winH1 + "px";
+            dialogbox1.style.left = (winW1/2) - (550 * .5)+"px";
+            dialogbox1.style.top = "90px";
+            dialogbox1.style.display = "block"
+        }
+        this.ok1 = function () {
+            document.getElementById('dialogoverlay1').style.display = 'none'   
+            document.getElementById('dialogbox1').style.display = 'none'
+        };
+    }
+    var Alert1 = new custoMalert()
