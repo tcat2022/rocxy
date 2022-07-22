@@ -35,13 +35,26 @@ function cat() {
         document.getElementById('cool').style.color = 'white';
      let a =   document.getElementById('display');
      a.style.color = 'black'; a.style.backgroundColor = 'darkgrey';
+     a.style.fontSize = '200%'
      document.querySelector('.buttons').style.backgroundColor = 'black';
      document.querySelector('.buttons').style.color = 'white';
    }
     function cub() {
  window.location.reload()
 }
-
+function cool() {
+    document.getElementById('equal').style.backgroundColor = 'darkgreen';
+    document.getElementById('equal1').style.backgroundColor = 'darkcyan'; 
+    document.getElementById('arrow').style.backgroundColor = 'skyblue'; 
+    document.getElementById('arrow').style.color = '';
+    document.getElementById('cool').style.backgroundColor = 'aquamarine';
+    document.getElementById('cool').style.color = 'chocolate';
+ let a =   document.getElementById('display');
+ a.style.color = 'chocolate'; a.style.backgroundColor = 'seagreen';
+ a.style.fontSize = '200%'
+ document.querySelector('.buttons').style.backgroundColor = 'aquamarine';
+ document.querySelector('.buttons').style.color = 'chocolate';
+}
 function customAlert() {
         this.render = function () {
             var winW = window.innerWidth;
@@ -50,7 +63,7 @@ function customAlert() {
             var dialogbox = document.getElementById('dialogbox');
             dialogoverlay.style.display = "block";
             dialogoverlay.style.height = winH + "px";
-            dialogbox.style.left = (winW/2) - (1100 * .8)+"px";
+            dialogbox.style.left = (winW/2) - (550 * .5)+"px";
             dialogbox.style.top = "90px";
             dialogbox.style.display = "block"
         }
@@ -78,3 +91,21 @@ var Alert = new customAlert();
         };
     }
     var Alert1 = new custoMalert()
+    function custoMalert1() {
+        this.render2 = function () {
+            var winW2 = window.innerWidth;
+            var winH2 = window.innerHeight;
+            var dialogoverlay2 = document.getElementById('dialogoverlay2');
+            var dialogbox2 = document.getElementById('dialogbox2');
+            dialogoverlay2.style.display = "block";
+            dialogoverlay2.style.height = winH2 + "px";
+            dialogbox2.style.left = (winW2/2) - (550 * .5)+"px";
+            dialogbox2.style.top = "90px";
+            dialogbox2.style.display = "block"
+        }
+        this.ok1 = function () {
+            document.getElementById('dialogoverlay2').style.display = 'none'   
+            document.getElementById('dialogbox2').style.display = 'none'
+        };
+    }
+    var Alert2 = new custoMalert1()
