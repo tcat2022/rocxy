@@ -48,26 +48,26 @@
 #dialogbox2{
     display: none;
     position: fixed;
-    background: salmon;
+    background:seagreen;
     border-radius: 7px;
     width:500px;
     margin: auto;
     z-index: 900;
-    box-shadow: 0px 0px 10px 10px lightblue;
+    box-shadow: 0px 0px 10px 10px skyblue;
 }
 #dialogbox2 > div{ margin: 5px;}
-#dialogbox2 > div #dialogboxhead2{background:lightgreen; font-size: 19px; padding: 10px; color:white;}
-#dialogbox2 > div #dialogboxfoot2{background:lightgreen; 
-    font-size: 19px; padding: 10px; color:white; text-align:right;}
+#dialogbox2 > div #dialogboxhead2{background:aquamarine; font-size: 19px; padding: 10px; color:chocolate;}
+#dialogbox2 > div #dialogboxfoot2{background:aquamarine; 
+    font-size: 19px; padding: 10px; color:chocolate; text-align:right;}
 #btnstyle3 {
     color:white;
-    background-color: lightgreen;
-    border: 3px solid salmon;
+    background-color:darkcyan;
+    border: 3px solid seagreen;
     width:50px;
     height: 25px;
     margin: 0 auto;
     font-size:large;
-    box-shadow: 0px 0px 5px 5px lightblue;
+    box-shadow: 0px 0px 5px 5px skyblue;
 }
 #dialogoverlay1 {
     display: none;
