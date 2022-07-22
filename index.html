@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="cat.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onload="fred()">
         <div id="center">
        <button  id="v" onclick="Alert.render();">dark mode</button>
        <p></p>
@@ -54,10 +54,13 @@
                 <div>
                     <div id="dialogboxhead1"><h1 align="center">Would you like to go back to Normal Mode</h1></div>
                     <div id="dialogboxfoot1"><button onclick="Alert1.ok1()" id="btnstyle2">NO</button> &emsp;  <button onclick="cub(); Alert1.oK1()" id="btnstyle2">YES</button></div>
-                    <div id="img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;<br></div>
                 </div>
             </div>
          </div>
-         <script src="script.js"></script>
+         <script src="script.js">
+            function fred() {
+            alert('hello')
+            }
+         </script>
     </body>
 </html>
