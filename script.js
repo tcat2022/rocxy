@@ -179,6 +179,11 @@ document.body.addEventListener('keypress', e => {
         display.innerText = eval(display.innerText);
             }
             });
+            document.body.addEventListener('keydown', e => {
+                if(e.keyCode === 187){
+              display.innerText = eval(display.innerText);
+                  }
+                  });
    document.body.addEventListener('keydown', e => {
               if(e.keyCode === 8){
   display.innerText = display.innerText.slice(0, -1);
@@ -218,7 +223,36 @@ document.body.addEventListener('keypress', e => {
                                 if(e.keyCode === 107){
                   display.innerText = display.innerText + "+" 
                                           }
-      });                            
+      });    
+      document.body.addEventListener('keydown', e => {
+        if(e.keyCode === 106){
+display.innerText = display.innerText + "*" 
+                  }
+});        
+document.body.addEventListener('keydown', e => {
+    if(e.keyCode === 109){
+display.innerText = display.innerText + "-" 
+              }
+});     
+document.body.addEventListener('keydown', e => {
+    if(e.keyCode === 111){
+display.innerText = display.innerText + "/" 
+              }
+});   
+document.body.addEventListener('keydown', e => {
+    if(e.keyCode === 110){
+display.innerText = display.innerText + "." 
+              }
+});               document.body.addEventListener('keydown', e => {
+    if(e.keyCode === 190){
+display.innerText = display.innerText + "." 
+              }
+});  
+document.body.addEventListener('keydown', e => {
+    if(e.keyCode === 96){
+display.innerText = display.innerText + "0" 
+              }
+}); 
         display1 = document.getElementById('display')
         if(display1.innerText.length =  25){
         display1.style.overflowY = "hidden";
