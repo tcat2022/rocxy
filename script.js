@@ -18,7 +18,8 @@ switch(e.target.innerText){
         case '=': 
         try{
             display.innerText = eval(display.innerText);
-        } catch{
+            }
+        catch{
             let b =
             display.innerText = 'invaled expresion' 
         }
@@ -109,3 +110,117 @@ var Alert = new customAlert();
         };
     }
     var Alert2 = new custoMalert1()
+    document.body.addEventListener('keydown', e => {
+        if(e.keyCode === 48){
+          display.innerText = display.innerText + "0" 
+        }
+        });
+    document.body.addEventListener('keydown', e => {
+        if(e.keyCode === 57){
+          display.innerText = display.innerText + "9" 
+        }
+        });
+        document.body.addEventListener('keydown', e => {
+            if(e.keyCode === 105){
+              display.innerText = display.innerText + "9" 
+            }
+            });
+document.body.addEventListener('keypress', e => {
+if(e.keyCode === 56){
+  display.innerText = display.innerText + "8" 
+}
+});
+document.body.addEventListener('keypress', e => {
+if(e.keyCode === 55){
+ display.innerText = display.innerText + "7" 
+ }
+ });
+ document.body.addEventListener('keypress', e => {
+if(e.keyCode === 54){
+ display.innerText = display.innerText + "6" 
+}});
+ document.body.addEventListener('keypress', e => {
+if(e.keyCode === 53){
+      display.innerText = display.innerText + "5" 
+ }
+});
+document.body.addEventListener('keypress', e => {
+ if(e.keyCode === 52){
+  display.innerText = display.innerText + "4" 
+ }
+ });
+ document.body.addEventListener('keydown', e => {
+    if(e.keyCode === 51){
+      display.innerText = display.innerText + "3" 
+    }
+});
+    document.body.addEventListener('keydown', e => {
+    if(e.keyCode === 50){
+    display.innerText = display.innerText + "2" 
+     }
+    });
+     document.body.addEventListener('keydown', e => {
+   if(e.keyCode === 49){
+    display.innerText =  display.innerText + "1" 
+ }
+ });
+ document.body.addEventListener('keydown', e => {
+    if(e.keyCode === 46){
+      display.innerText = "" 
+    }
+    }); 
+    document.body.addEventListener('keydown', e => {
+        if(e.keyCode === 67){
+         display.innerText = "" 
+        }
+       });
+        document.body.addEventListener('keydown', e => {
+          if(e.keyCode === 13){
+        display.innerText = eval(display.innerText);
+            }
+            });
+   document.body.addEventListener('keydown', e => {
+              if(e.keyCode === 8){
+  display.innerText = display.innerText.slice(0, -1);
+          }
+         });
+                document.body.addEventListener('keydown', e => {
+          if(e.keyCode === 97){
+        display.innerText = display.innerText + "1" 
+                    }
+          });    document.body.addEventListener('keydown', e => {
+            if(e.keyCode === 98){
+       display.innerText = display.innerText + "2" 
+               }
+            });
+     document.body.addEventListener('keydown', e => {
+                if(e.keyCode === 99){
+   display.innerText = display.innerText + "3"                 }
+                });         document.body.addEventListener('keydown', e => {
+                    if(e.keyCode === 96){
+                        document.body.addEventListener('keydown', e => {
+                            if(e.keyCode === 97){
+                          display.innerText = display.innerText + "1" 
+                                      }
+                            });      }
+         });
+                    document.body.addEventListener('keydown', e => {
+               if(e.keyCode === 191){
+            display.innerText = display.innerText + "/" 
+                                  }
+                        });
+           document.body.addEventListener('keydown', e => {
+                            if(e.keyCode === 189){
+          display.innerText = display.innerText + "-" 
+                     }
+                            });
+               document.body.addEventListener('keydown', e => {
+                                if(e.keyCode === 107){
+                  display.innerText = display.innerText + "+" 
+                                          }
+      });                            
+        display1 = document.getElementById('display')
+        if(display1.innerText.length =  25){
+        display1.style.overflowY = "hidden";
+        display1.style.overflowWrap = "break-word";
+        }
