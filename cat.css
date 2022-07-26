@@ -102,14 +102,38 @@
     font-size:large;
     box-shadow: 0px 0px 5px 5px lightblue;
 }
-#inputd {
-text-align: center;
+#game{
+    width: 500px;
+    height: 200px;
+    border: 5px dashed chocolate;
 }
-#input{
-    text-align: center;
-    font-size: 200%;
+#cat{
+    width: 20px;
+    height: 50px;
+    background-color: turquoise;
+    position: relative;
+    top: 150px;
+
 }
-#head{
-    text-align: center;
-    font-size: 350%;
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: maroon;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: blocks 1s infinite;
+} 
+.animate{
+    animation: jump .5s;
+}
+@keyframes jump {
+0%{top: 150px; ;}
+30%{top: 100px;}
+70%{top: 100px;}
+100%{top: 150px;}
+}
+@keyframes blocks{
+    0%{left:480;}
+    100%{left:-40px;}
 }
