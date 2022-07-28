@@ -3,6 +3,7 @@ var block = document.getElementById('block')
 let button = document.getElementById('start')
 let button2 = document.getElementById('start2')
 let game = document.getElementById('game')
+
 function start(){
     document.body.addEventListener('keypress', (e) =>{
 if(e.keyCode === 32){
@@ -45,4 +46,17 @@ block.classList.remove('animateb');
 button2.style.display = "inherit"
 }
 },5)
+
+/*document.body.addEventListener('click', function(){
+setInterval(function(){
+alert('you win')
+block.classList.remove('animateb');
+button2.style.display = "inherit"
+},24000)})*/
+}
+function red(){
+    if(game.classList != 'ani'){
+        game.classList.add('ani');
+    }
+
 }
