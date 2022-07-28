@@ -135,6 +135,7 @@ background-repeat: repeat-x repeat-y;
     width: fit-content;
     margin: 1% auto;
     border: 3px dashed aliceblue;
+    margin: 10px auto;
 }
 #block{
     width: 25px;
@@ -146,6 +147,20 @@ background-repeat: repeat-x repeat-y;
     border-radius: 50%;
 
 } 
+#j{
+
+    margin: 10% auto;
+    position:absolute;
+    bottom: -27%;
+    left: 20%;
+}
+#vid{
+    position: absolute;
+    top: 0;
+    width:100%;
+    margin:auto;
+    z-index: -1;
+}
 #start{
     position: relative;
     top: 20px;
