@@ -9,15 +9,16 @@
 </head>
 <body  onclick="jump()" onload="red()" id="b"  style="margin: 0; padding:0; ">
     <video src="ocean.mp4" id="vid" autoplay loop muted></video>
-<h1 id="sky" align="center">SKY JUMPER</h1>
+<h1 id="sky" align="center" onclick="ox()">SKY JUMPER</h1>
+<p id="start"  onclick="ox();start(); ">start
 <div id="game">
+    <h1 id="counter">0</h1>
 <div id="cat"></div>
 <div id="block"><div id="circle"></div></div>
-<button id="start"  onclick="start()" >start</button>
 <button id="start2"  onclick="start()" >replay</button>
-</div>
+</div></p>
 <h2 align="center" id="j">rules
-<p align="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit repellendus a nostrum dolorem vitae dolores.</p></h2>
-    <script src="exper.js"></script>
+<p align="center" id="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit repellendus a nostrum dolorem vitae dolores.</p></h1>   
+<script src="exper.js"></script>
 </body>
 </html>
